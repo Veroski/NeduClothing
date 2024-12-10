@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Para desarrollo local sin especificar carpeta base
+  base: '/NeduClothing',
 });
