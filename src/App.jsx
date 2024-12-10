@@ -22,6 +22,10 @@ const HomePage = () => (
           src="/logo.png"
           alt="NEDU Clothing Logo"
           className="mx-auto mb-8 w-48"
+          style={{
+            filter: "drop-shadow(2px 4px 6px rgba(0,0,0,0.5))",
+            borderRadius: "50%",
+          }}
         />
         <h1 className="text-5xl font-bold mb-4">NEDU Clothing</h1>
         <p className="text-xl mb-8">Elegancia y frescura en cada prenda</p>
@@ -38,12 +42,12 @@ const HomePage = () => (
 
     {/* Productos Destacados */}
     <div className="container mx-auto py-16 px-4 text-black">
-    <h2 className="text-3xl font-bold mb-8 text-center text-black">Productos Destacados</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-black">Productos Destacados</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <ProductCard name="Sudadera Cerezas" price={39.99} imageUrl="/product1.png" />
         <ProductCard name="Camiseta Chad" price={19.99} imageUrl="/product2.png" />
         <ProductCard name="Top sin mangas" price={17.95} imageUrl="/product3.png" />
-        <ProductCard name="Jersey Chill" price={29.99} imageUrl="/product5.png" />
+        <ProductCard name="Tirantes Pou" price={19.99} imageUrl="/product6.png" />
       </div>
     </div>
 
@@ -54,7 +58,7 @@ const HomePage = () => (
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-semibold mb-2">NEDU Clothing</h3>
             <p>info@neduclothing.com</p>
-            
+
           </div>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-gray-300 transition duration-300">
