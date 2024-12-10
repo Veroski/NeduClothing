@@ -141,7 +141,7 @@ const ExplorePage = () => {
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
             >
-              <option value="name">Nombre</option>
+              <option value="name">Precio</option>
               <option value="price_asc">Precio: Menor a Mayor</option>
               <option value="price_desc">Precio: Mayor a Menor</option>
             </select>
