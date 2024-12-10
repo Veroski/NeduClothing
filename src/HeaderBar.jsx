@@ -19,7 +19,7 @@ const HeaderBar = () => (
                 <a href={`/explorar?category=Hombre`} className="text-gray-600 hover:text-black transition duration-300">Hombre</a>
                 <a href={`/explorar?category=Mujer`} className="text-gray-600 hover:text-black transition duration-300">Mujer</a>
                 <a href={`/explorar?category=Accesorios`} className="text-gray-600 hover:text-black transition duration-300">Accesorios</a>
-
+                <a href={`/explorar?category=NeduSpecials`} className="text-gray-600 hover:text-black transition duration-300">Nedu Specials</a>
             </nav>
             <div className="flex items-center space-x-4">
                 <button className="text-gray-600 hover:text-white transition duration-300">

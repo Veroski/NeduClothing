@@ -5,14 +5,18 @@ import { useLocation } from "react-router-dom"; // Necesario para leer parámetr
 
 // Simulación de datos de productos
 const products = [
-  { id: 1, name: "Sudadera Messi", price: 39.99, category: "Hombre", imageUrl: "/product4.png" },
-  { id: 2, name: "Tirantes", price: 19.99, category: "Mujer", imageUrl: "/product6.png" },
-  { id: 3, name: "Sudadera CR7", price: 39.98, category: "Hombre", imageUrl: "/product11.png" },
-  { id: 4, name: "Gorra", price: 14.99, category: "Accesorios", imageUrl: "/product7.png" },
-  { id: 5, name: "Suéter pou", price: 29.99, category: "Mujer", imageUrl: "/product9.png" },
-  { id: 6, name: "Suéter de Seda", price: 29.99, category: "Hombre", imageUrl: "/product12.png" },
+  { id: 1, name: "Sudadera Messi", price: 39.99, category: "NeduSpecials", imageUrl: "/product4.png" },
+  { id: 2, name: "Tirantes Pou", price: 19.99, category: "Mujer", imageUrl: "/product6.png" },
+  { id: 3, name: "Sudadera CR7", price: 39.98, category: "NeduSpecials", imageUrl: "/product11.png" },
+  { id: 4, name: "Gorra Lebron", price: 14.99, category: "Accesorios", imageUrl: "/product7.png" },
+  { id: 5, name: "Suéter pou", price: 29.99, category: "NeduSpecials", imageUrl: "/product9.png" },
+  { id: 6, name: "Jersey winning son", price: 29.99, category: "Hombre", imageUrl: "/product12.png" },
   { id: 7, name: "Bolso de Cuero", price: 23.99, category: "Accesorios", imageUrl: "/product8.png" },
-  { id: 8, name: "Pantalón Pijama", price: 8.99, category: "Hombre", imageUrl: "/product10.png" },
+  { id: 8, name: "Pantalón Pijama", price: 8.99, category: "NeduSpecials", imageUrl: "/product10.png" },
+  { id: 9, name: "Sudadera Cerezas", price: 19.99, category: "Mujer", imageUrl: "/product1.png" },
+  { id: 10, name: "Camiseta Chad", price: 24.99, category: "Hombre", imageUrl: "/product2.png" },
+  { id: 11, name: "Camiseta sin mangas", price: 14.99, category: "Hombre", imageUrl: "/product3.png" },
+  { id: 12, name: "Jersey Chill", price: 29.99, category: "NeduSpecials", imageUrl: "/product5.png" },
 ];
 
 const ProductCard = ({ name, price, imageUrl }) => (
@@ -23,7 +27,7 @@ const ProductCard = ({ name, price, imageUrl }) => (
       className="w-full h-64 object-cover mb-4 rounded"
     />
     <h3 className="text-lg font-semibold mb-2">{name}</h3>
-    <p className="text-gray-600 mb-4">€{price.toFixed(2)}</p>
+    <p className="text-gray-600 mb-4">{price.toFixed(2)}€</p>
     <button className="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition duration-300 flex items-center justify-center w-full">
       <ShoppingBag className="mr-2" size={18} />
       Comprar
@@ -66,6 +70,7 @@ const ExplorePage = () => {
               <option>Hombre</option>
               <option>Mujer</option>
               <option>Accesorios</option>
+              <option>NeduSpecials</option> {/* Nueva opción agregada */}
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <ChevronDown size={20} />
